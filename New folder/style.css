@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+:root{
+  --black-color:#fff;
+}
+
+.wrapper {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  height:100vh;
+  width:100%;
+  left:52px;
+  background:url('https://i.pinimg.com/originals/d2/d8/4a/d2d84af7e4c6b6c33a606d3127f4d31e.gif') no-repeat;
+  background-size:cover;
+  background-position:center;
+  background-color: #66fcf1;
+  
+}
+@keyframes animateBg {
+  100% {
+    filter:hue-rotate(360deg);
+  }
+}
+
+
+
+
+
+ 
+
+
+
+
+
+/* login box */
+
+
+
+
+
+
+
+
+
+
+.login-box {
+    position:absolute;
+    width: 330px;
+    height: 450px;
+    background:transparent;
+    border-radius: 30px;
+    border: 3px solid rgba(216, 41, 41, 0.349);
+    display:-webkit-inline-flex;
+    justify-content:center;
+    align-items: center;
+    backdrop-filter: blur(155px);
+   border-top-color: rgb(175, 45, 207);
+   border-right-color:rgb(175, 45, 207);
+   animation:animateBg 4s forwards;
+  
+
+
+   
+  }
+
+
+
+
+
+
+
+
+
+
+/* h2 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+  h2 {
+    font-size:2em;
+    font-style: oblique;
+    color:var(--black-color);
+    text-align:center;
+  }
+  .input-box {
+    position:relative;
+    width:290px;
+    margin:30px 0;
+    border-bottom:1px solid var(--black-color);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* in box leble 1 */
+
+
+
+
+
+
+
+
+
+
+
+
+  .input-box label {
+    position:absolute;
+    top:50%;
+    left:5px;
+    transform:translateY(-50%);
+    font-size:1em;
+    font-style: oblique;
+    color:var(--black-color);
+    pointer-events:none;
+    transition:0.56s;
+  }
+
+
+
+
+
+  .input-box input:focus  ~ label,
+  .input-box input:valid  ~ label {
+    top:-5px;
+  }
+
+
+
+
+
+
+
+
+
+
+  /* in box lable 2 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .input-box input {
+    width:100%;
+    height:50px;
+    background:transparent;
+    border:none;
+    outline:none;
+    font-size:1em;
+    font-style: oblique;
+    color:var(--black-color);
+    padding:0 35px 0 5px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* in box lable 3 */
+
+
+  
+
+
+/* xxx */
+
+
+
+  .input-box .icon {
+    position:absolute;
+    right:8px;
+    top:50%;
+    color: var(--black-color);
+    transform: translateY(-50%);
+  }
+  .remember-forgot {
+    margin:-25px 0 15px;
+    font-size:.8em;
+    font-style: oblique;
+    position: fixed;
+    left:185px;
+    
+    color:var(--black-color);
+    display:flex;
+    justify-content:space-between;
+  }
+  .remember-forgot label input {
+    margin-right:3px;
+  }
+  .remember-forgot a {
+    color:var(--black-color);
+    text-decoration:none;
+  }
+  .remember-forgot a:hover {
+    text-decoration:underline;
+  }
+
+
+
+/* xxx */
+
+
+
+
+
+button {
+  width:100%;
+  height:40px;
+  background-color:#000;
+  border-style: groove  rgb(20, 133, 133);
+  border-radius:40px;
+  cursor:pointer;
+  font-size:1em;
+  font-style:oblique;
+  color:#66fcf1;
+  font-weight:500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .register-link {
+    font-size:.9em;
+    color:var(--black-color);
+    text-align:center;
+    margin:25px 0 10px;
+  }
+  .register-link p a {
+    color:var(--black-color);
+    text-decoration:none;
+    font-weight:600;
+  }
+  .register-link p a:hover {
+    text-decoration:underline;
+  }
+  @media (max-width:500px) {
+    .login-box {
+      width:100%;
+      height:100vh;
+      border:none;
+      border-radius:0;
+    }
+    .input-box {
+      width:290px;
+    }
+  }
+
+
+
